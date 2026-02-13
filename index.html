@@ -11,8 +11,16 @@
 body{
   background:#0f001a;
   color:white;
-  overflow:hidden;
+  overflow-x:hidden;   /* ONLY hide horizontal */
+  overflow-y:auto;    /* allow vertical scroll */
+  padding:10px;       /* mobile safe padding */
 }
+#loveletter p{
+  padding:0 15px;
+  box-sizing:border-box;
+}
+
+
 
 /* Background Glow */
 body::before{
@@ -561,3 +569,4 @@ function openGift(content){
 </body>
 
 </html>
+
